@@ -126,11 +126,11 @@ class ViewController: UIViewController {
                     self.gameCheck(result:"gameover", message: "壁に当たりました")
                     return
                 }
-                //playerviewとgalviewが当たっているかornot
-                if self .goalView.frame.intersects(self.playerView.frame){
+            }
+            
+            if self .goalView.frame.intersects(self.playerView.frame){
                     self.gameCheck(result:"clear", message: "クリアしました！")
                     return
-                }
             }
            
             self.playerView.center = CGPoint(x: posX, y: posY)
